@@ -1,0 +1,281 @@
+\documentclass[10pt]{article}
+
+\usepackage[letterpaper, portrait, margin=1.25in]{geometry}
+
+\usepackage{authblk}
+\usepackage[yyyymmdd,hhmmss]{datetime}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{ASTR 511: Galaxies as Galaxies}
+\rhead{Winter 2021}
+\rfoot{\em \tiny Compiled on \today\ at \currenttime}
+\cfoot{\thepage}
+\lfoot{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% author-defined commands
+\newcommand\about     {\hbox{$\sim$}}
+\newcommand\x         {\hbox{$\times$}}
+\newcommand\othername {\hbox{$\dots$}}
+\def\eq#1{\begin{equation} #1 \end{equation}}
+\def\eqarray#1{\begin{eqnarray} #1 \end{eqnarray}}
+\def\eqarraylet#1{\begin{mathletters}\begin{eqnarray} #1 %
+                  \end{eqnarray}\end{mathletters}}
+\def\non    {\nonumber \\}
+\def\DS     {\displaystyle}
+\def\E#1{\hbox{$10^{#1}$}}
+\def\sub#1{_{\rm #1}}
+\def\case#1/#2{\hbox{$\frac{#1}{#2}$}}
+\def\about  {\hbox{$\sim$}}
+\def\x      {\hbox{$\times$}}
+\def\ug               {\hbox{$u-g$}}
+\def\gr               {\hbox{$g-r$}}
+\def\ri               {\hbox{$r-i$}}
+\def\iz               {\hbox{$i-z$}}
+\def\a                {\hbox{$a^*$}}
+\def\O                {\hbox{$O$}}
+\def\E                {\hbox{$E$}}
+\def\Oa               {\hbox{$O_a$}}
+\def\Ea               {\hbox{$E_a$}}
+\def\Jg               {\hbox{$J_g$}}
+\def\Fg               {\hbox{$F_g$}}
+\def\J                {\hbox{$J$}}
+\def\F                {\hbox{$F$}}
+\def\N                {\hbox{$N$}}
+\def\dd               {\hbox{deg/day}}
+\def\mic              {\hbox{$\mu{\rm m}$}}
+\def\Mo{\hbox{$M_{\odot}$}}
+\def\Lo{\hbox{$L_{\odot}$}}
+\def\comm#1           {\tt #1}
+\def\refto#1          {\ref #1}
+\def\T#1              {({\bf #1})}
+\def\H#1              {({\it #1})}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{ASTR 511: Galaxies as Galaxies}
+\author{Mario Juri\'{c} and \v{Z}eljko Ivezi\'c}
+\affil{University of Washington, Winter Quarter 2021}
+\date{\vspace{-5ex}}
+
+\begin{document}
+\maketitle
+
+\vskip 0.3in
+\leftline{{\bf  Location and Time:} Tuesday and Thursday 2:00-3:20, Virtual}
+
+\vskip 0.2in
+\leftline{{\bf  Office Hours:} { Any time my office door is open; after class is optimal. }}
+\vskip 0.2in
+\leftline{{\bf  Grading:} closed-book final exam 20\%, 3 homeworks 60\%, term
+                          paper presentation 20\%;}
+\leftline{                \hskip 0.8in key: $>$90\%=A, $>$80\%=B, $>$70\%=C, $>$50\%=D.}
+\vskip 0.2in
+\leftline{{\bf  Class web site:} http://research.majuric.org/public/teaching/astr511/}
+\vskip 0.2in
+\leftline{{\bf  Required reading:} Ivezi\'{c}, Beers \& Juri\'{c} 2012, ARA\&A, 50, 251.}
+\vskip 0.2in
+\leftline{{\bf  Reference Books:} Binney \& Merrifield: {\it Galactic Astronomy}}    
+\leftline{   \hskip 1.44in         Reid \& Hawley: {\it New Light on Dark Stars}} 
+\leftline{   \hskip 1.44in         Binney \& Tremaine: {\it Galactic Dynamics}}
+\leftline{   \hskip 1.44in         Sparke \& Gallagher: {\it Galaxies in the Universe}}
+\vskip 0.3in
+
+\leftline{\bf  The main Goals for this Class are:}
+\begin{enumerate}
+  \item Introducing the motivation for studying galaxies in general, and the Milky 
+            Way in particular. Overview of the most relevant literature. Overview of 
+            galaxy formation theories, galaxy dynamics, and connection to dark matter.
+  \item Informing students about the current research in galactic astronomy, including discussion of 
+            the expected observational and theoretical progress for the next decade. 
+  \item Exposing students to practical problems through hands-on seminars, with emphasis
+            on numerical methods and data mining, and using modern software engineering tools. 
+  \item Training students to give professional talks. 
+\end{enumerate} 
+
+\vskip 0.2in
+\leftline{\bf  Expected Class Schedule}
+\begin{enumerate}
+  \item {\bf Tue: Jan 5}   Introduction to the course  (MJ \& ZI) 
+%                              - Introduce the syllabus
+%                              - Class mailing list
+%                              - Have them get github accounts
+%                              - Github student developer pack (https://education.github.com/)
+%                              - Discuss problem sets
+%                                - Mention Anaconda for Python
+  \item {\bf Thu: Jan 7}     L1: Review of stellar astrophysics (ZI)
+%                              - basic stellar parameters
+%                              - open and globular clusters
+%                              - simple stellar populations and population synthesis
+
+  \item {\bf Tue: Jan 12}    L2: Basic properties of the Milky Way and the Local Group (ZI)
+%                              - the main structural components of the MW
+%                              - stars, gas, dust, black hole
+%                              - brief overview of metallicity and kinematics distributions
+%                              - LMC/SMC
+%                              - Sgr dwarf, tidal streams, dwarf satellites
+%                              - multi-wavelength view of the Milky Way
+  \item {\bf Thu: Jan 14}    L3: Basic properties of galaxies (ZI)
+%                              - brief overview of history
+%                              - morphological differences and Hubble tuning fork diagram
+%                              - exponential vs. deVac intensity profiles
+%                              - multi-wavelength views of galaxies
+%                              - origins of infrared emission in galaxies
+%                              - starburst galaxies and radio galaxies
+
+  \item {\bf Tue: Jan 19}    L4: Luminosity and mass functions of galaxies (ZI)
+%                              - color-luminosity distributions
+%                              - the spatial distribution of galaxies (vs. galaxy properties)
+%                              - Butch-Oemler effect (density-morphology relations)
+%                              - methods for estimating luminosity and mass functions
+%                              - introduction to galaxy formation theories
+%                              - galaxy mergers
+%                              - dwarf galaxies
+
+  \item {\bf Thu: Jan 21}    L5: Stellar kinematics in galaxies (MJ)
+%                              - introduction to proper motion and radial velocity measurements
+%                              - empirical Tully-Fisher and Faber-Jackson relations
+
+  \item {\bf Tue: Jan 26}    L6: Galactic Dynamics I: Potentials and Orbits (MJ) {\bf (HW 1 due)}
+%                              - potential theory
+%                              - the orbits of stars
+%                              - the collisionless Boltzman equation
+
+ \item {\bf Thu: Jan 28}     L7: Galactic Dynamics II: Galaxy models (MJ)
+%                              - the Jeans equations
+%                              - the virial theorem
+%                              - King models
+
+  \item {\bf Tue: Feb 2}     L8: Galactic Dynamics III: Advanced Dynamics (MJ)
+%                              - action-angle variables
+%                              - distribution functions
+
+  \item {\bf Thu: Feb 4}     L9: Galactic Dynamics IV: Instabilities and Resonances (MJ)
+%                              - non-equilibrium behaviors of many-body systems
+
+  \item {\bf Tue: Feb 9}    L10: Evidence for dark matter in galaxies (MJ)
+%                              - rotation curves
+%                              - velocity dispersion
+%                              - weak lensing
+%                              - MOND as an alternative hypothesis
+
+  \item {\bf Thu: Feb 11}  L11: Discussion of homeworks and term papers (MJ \& ZI) 
+
+  \item {\bf Tue: Feb 16}  L12: Stellar count distribution in the Milky Way (MJ)
+%                              - derive analytic Euclidean counts
+%                              - review history of counting stars (Bahcall & Soneira, etc)
+%                              - modern SDSS and 2MASS results
+
+  \item {\bf Thu: Feb 18}  L13: Stellar metallicity and kinematics in the Milky Way (ZI) {\bf (HW 3 due)}
+%                              - [Fe/H] and [alpha/Fe] as probes of chemical evolution
+%                              - SDSS, RAVE and other modern results
+%                              - SDSS results for kinematics of stars in the Milky Way
+%                              - SDSS constraints for dark matter in the Milky Way disk and halo
+
+  \item {\bf Tue: Feb 23}  L14: Open questions in galactic astronomy and modern sky surveys (ZI) 
+%                              - top open questions in galaxy astrophysics
+%                              - Gaia, LSST, RAVE, SDSS: science drivers, data products, and data release cadence
+
+  \item {\bf Thu: Feb 25}   Term paper presentations  /  Project work
+  \item {\bf Thu: Mar 2}    Term paper presentations  /  Project work
+  \item {\bf Tue: Mar 4}    Term paper presentations  /  Project work
+  \item {\bf Thu: Mar 9}    Term paper presentations  /  Project work
+  \item {\bf Thu: Mar 11}   Term paper presentations  /  Project work  
+  \item {\bf Tue: Mar 16} FINAL EXAM
+\end{enumerate}
+
+
+\vskip 0.2in
+
+\leftline{\bf  Homework}
+
+There will be three homeworks, designed as term projects. All three will be similar
+from the technical point of view: they will involve reading a number of vectors with several 
+million elements from provided files (using Python and Jupyter notebooks), simple operations 
+with these vectors such as binning and low-order statistics, and visualization of your results. 
+
+The problems and links to data files will be posted at the class website about two weeks 
+before the homework is due. They will address these three general themes:
+
+\begin{enumerate}
+\item Stellar number density distribution in MW
+\item Determination of luminosity function 
+\item Stellar metallicity distribution in MW  
+\end{enumerate}
+
+We will use modern software engineering tools, such as github for version control and Jupyter 
+notebooks, for HW submission. 
+
+\vskip 0.2in
+
+\leftline{\bf Some Possible Papers to Present:} Pick one below, or propose one that you find interesting, by {\bf Jan 28} (e-mail me your choice).
+
+\begin{enumerate}
+\item Bahcall, J.N. \& Tremaine, S. 1981 (ApJ 244, 805)
+       {\it Methods for determining the masses of spherical systems. I - Test particles around a point mass}
+\item Dehnen, W. \& Binney, J.J. 1998 (MNRAS 298, 387)
+          {\it Local stellar kinematics from HIPPARCOS data}
+\item Helmi, A. \& White, S.D.M. 2001 (MNRAS 323, 529)
+         {\it Simple dynamical models of the Sagittarius dwarf galaxy}
+\item Ibata, R., et al. 2001 (ApJ 551, 294)
+         {\it Great Circle Tidal Streams: Evidence for a Nearly Spherical Massive Dark Halo around the Milky Way}
+\item Jaffe, W. 1983 (MNRAS 202, 995) 
+          {\it A simple model for the distribution of light in spherical galaxies}
+\item Kuijken, K. \& Gilmore, G. 1991 (ApJ 367, L9)  
+     {\it The galactic disk surface mass density and the Galactic force K(z) at Z = 1.1 kpc}
+\item Kuijken, K. \& Tremaine, S. 1994 (ApJ 421, 178)
+            {\it On the ellipticity of the Galactic disk}
+\item Navarro, J.F., Frenk, C.S. \& White, S.D.M. 1996 (ApJ 462, 563) 
+         {\it The Structure of Cold Dark Matter Halos}              
+\item Spitzer, L. \& Schwarzschild, M. 1953 (ApJ 118, 106) 
+           {\it The Possible Influence of Interstellar Clouds on Stellar Velocities. II}
+\item van den Bosch, F.C. \& Dalcanton, J.J. 2000 (ApJ 534, 146)
+         {\it Semianalytical Models for the Formation of 
+               Disk Galaxies. II. Dark Matter versus Modified Newtonian Dynamics}
+\item Walsh, Willman \& Jerjen 2009 (AJ, 137, 450) 
+   {\it The Invisibles: A Detection Algorithm to Trace the Faintest Milky Way Satellites}  
+\item Johnston et al. 2008 (ApJ, 689, 936)
+    {\it Tracing Galaxy Formation with Stellar Halos}
+\item  Kauffmann et al. 2003 (MNRAS, 341, 33) 
+   {\it Stellar Masses and Star Formation Histories for 80,000 Galaxies from the Sloan Digital Sky Survey} 
+\item McGurk et al. 2010 (AJ, 139, 1261) 
+     {\it Principal Component Analysis of SDSS Stellar Spectra}
+\item Sesar et al. 2010 (ApJ, 708, 717)
+  {\it Light Curve Templates and Galactic Distribution of RR Lyrae Stars from Sloan Digital Sky Survey Stripe 82}
+\item Schlaufman et al. 2009 (ApJ, 703, 2177)
+  {\it Insight into the Formation of the Milky Way Through Cold Halo Substructure. I. The ECHOS of Milky Way Formation}
+\item Law and Majewski 2010 (ApJ, 714, 229) 
+ {\it The Sagittarius Dwarf Galaxy: A Model for Evolution in a Triaxial Milky Way Halo}
+\item Beers et al. 2012 (ApJ, 746, 34) 
+ {\it The Case for the Dual Halo of the Milky Way}
+\item Berry et al. 2012 (ApJ, 757, 166)
+ {\it The Milky Way Tomography with SDSS. IV. Dissecting Dust}
+\item Evans \& Williams 2014 (MNRAS, 443, 791)
+ {\it A very simple cusped halo model} 
+\end{enumerate}
+
+
+These papers are very relevant for our class and cover subjects that are
+not going to be discussed in detail. Choose a paper and prepare a 10 min long 
+Powerpoint (or equivalent) presentation
+(presumably including the most important figures from the paper). Pretend 
+you did the work yourself and are giving an invited talk at a meeting. 
+There will be a 5 min long question and answer session after the talk. 
+The purpose of this exercise is to 1) learn some science, 2) practice 
+extracting relevant information from papers 3) practice giving talks,
+4) practice having over-active audience.
+
+Do not forget the following good practices: 1) empty your pockets (no loose 
+change, keys, phone, and such),
+2) talk slowly and sufficently loud, 3) don't look at the floor, control
+your audience with direct eye contact, don't turn your back to the audience, 
+don't be agressive with the pointer, etc. 4) don't rush (don't overload 
+your 10 min long presentation), concentrate on the most important points,
+5) emphasize what are truly new, and, possibly, unexpected results.
+6) comment on the limitations and pitfalls of the presented analysis;
+how do we know it's right, could it be wrong?
+
+
+\end{document}

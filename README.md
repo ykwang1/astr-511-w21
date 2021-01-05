@@ -4,7 +4,7 @@
 
 ## Location
 
- * When: 1:30-2:50pm Tue & 2:00-3:20pm Tue, Winter quarter 2020-2021
+ * When: 2:00-3:20pm TTh, Winter quarter 2020-2021
  * Where: Virtual
 
 ## Description

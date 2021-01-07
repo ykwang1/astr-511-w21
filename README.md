@@ -1,10 +1,10 @@
 # ASTR 511, Winter 2021: Galaxies as Galaxies
 
-[Mario Jurić](http://research.majuric.org)
+[Mario Jurić](http://research.majuric.org) and [Željko Ivezić](http://faculty.washington.edu/ivezic/)
 
 ## Location
 
- * When: 2:00-3:20, Tue & Thu, Winter quarter 2020-2021
+ * When: 2:00-3:20pm TTh, Winter quarter 2020-2021
  * Where: Virtual
 
 ## Description
